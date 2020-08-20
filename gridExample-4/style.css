@@ -1,0 +1,68 @@
+
+    @font-face {
+        font-family:myFont;
+        src: url("AGENTORANGE.woff");
+    }
+
+    *{
+        box-sizing: border-box;
+    }
+    .header{
+        grid-area: header;
+        
+    }
+    .nav{
+        grid-area: nav;
+        height: 55vh;
+    }
+    .section{
+        grid-area: section;
+    }
+    .aside{
+        grid-area: aside;
+    }
+    .footer{
+        grid-area: footer;
+    }
+    .container{
+        display: grid;
+        grid-template-areas: 
+        "header header header header header header"
+        "nav section section section aside aside"
+        "nav section section section aside aside"
+        "nav section section section aside aside"
+        "footer footer footer footer footer footer";
+        background-color: cornflowerblue;
+        padding: 20px;
+        grid-gap: 40px;
+    }
+    .container > div {
+        background-color: tomato;;
+        text-align: center;
+        padding:25px;
+        font-size: 20px;
+        font-family:myFont ;
+        color: teal;
+    }
+    ul{
+        margin:0;
+        padding: 0;
+        list-style-type: none;
+    }
+    li {
+        float: left;
+    }
+    a{
+        text-decoration: none;
+        display: inline-block;
+        margin-right: 25px;
+        color: white;
+    }
+    a:hover{
+        color:tomato;
+    }
+    .container > div:hover {
+        background-color:teal;
+        color: #000;
+    }
+
